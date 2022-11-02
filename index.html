@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego MiQuiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    
+    <!-- TODO: Agregar SDKs para los productos Firebase que quieras usar
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // Configuración Firebase de tu aplicación web
+      const firebaseConfig = {
+        apiKey: "AIzaSyBy1jMMOc3YqV6NVqdYhIHBBHCsL0edNN0",
+        authDomain: "proyecto-1-ea63f.firebaseapp.com",
+        projectId: "proyecto-1-ea63f",
+        storageBucket: "proyecto-1-ea63f.appspot.com",
+        messagingSenderId: "100602971330",
+        appId: "1:100602971330:web:39444b0687b27b68e0e75b"
+       };
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+        
+
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
